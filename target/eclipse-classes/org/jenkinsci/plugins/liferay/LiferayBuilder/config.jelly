@@ -1,0 +1,17 @@
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+	<f:entry title="Plugin Name" field="pluginName">
+		<f:textbox />
+	</f:entry>
+	<f:entry title="War File Directory" field="warFileDirectory" help="The directory that contains the war file to be deployed.">
+		<f:textbox />
+	</f:entry>
+	<f:entry title="War File" field="warFile" help="The war file to be deployed. You can use wildcards if you want, but the result should always be exactly one file.">
+		<f:textbox />
+	</f:entry>
+	<f:entry title="Choose a Liferay Server" field="liferayServer">
+	   	<f:select />
+	</f:entry>
+	<f:entry title="Verbose" field="verbose" help="Check this if you want to have verbose logs">
+		<f:checkbox />
+	</f:entry>
+</j:jelly>

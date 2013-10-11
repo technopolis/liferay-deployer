@@ -1,0 +1,3 @@
+<div>
+  This plugin deploys a liferay plugin in a liferay server. Requirement: The liferay server must have the "Remote IDE Connector" app installed, which you can download deom the liferay marketplace.
+</div>

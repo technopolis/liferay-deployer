@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Built-By: inky
+Created-By: Apache Maven
+Build-Jdk: 1.6.0_51
+Extension-Name: liferay-deployer
+Specification-Title: Deploys liferay plugins into a liferay server. Re
+ quires the app "Remote IDE Connector" to be installed on the liferay 
+ server.
+Implementation-Title: liferay-deployer
+Implementation-Version: 0.5
+Group-Id: org.jenkins-ci.plugins
+Short-Name: liferay-deployer
+Long-Name: Liferay Deployer
+Url: http://jenkins-ci.org/plugin/liferay-deployer/
+Plugin-Version: 0.5
+Hudson-Version: 1.509.2
+Jenkins-Version: 1.509.2
+Plugin-Developers: Charalampos Chrysikopoulos:charalamposc:charalampos
+ c@gmail.com
+

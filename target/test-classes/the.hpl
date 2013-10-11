@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: liferay-deployer
+Long-Name: Liferay Deployer
+Url: http://jenkins-ci.org/plugin/liferay-deployer/
+Plugin-Version: 0.5
+Hudson-Version: 1.509.2
+Jenkins-Version: 1.509.2
+Plugin-Developers: Charalampos Chrysikopoulos:charalamposc:charalampos
+ c@gmail.com
+Libraries: /Users/inky/Documents/workspace/liferay-deployer/target/cla
+ sses,/Users/inky/.m2/repository/commons-codec/commons-codec/1.6/commo
+ ns-codec-1.6.jar,/Users/inky/.m2/repository/org/apache/httpcomponents
+ /httpclient/4.2.5/httpclient-4.2.5.jar,/Users/inky/.m2/repository/org
+ /apache/httpcomponents/httpmime/4.2.5/httpmime-4.2.5.jar,/Users/inky/
+ .m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-
+ 1.1.1.jar,/Users/inky/.m2/repository/org/apache/httpcomponents/httpco
+ re/4.2.4/httpcore-4.2.4.jar
+Resource-Path: /Users/inky/Documents/workspace/liferay-deployer/src/ma
+ in/webapp
+

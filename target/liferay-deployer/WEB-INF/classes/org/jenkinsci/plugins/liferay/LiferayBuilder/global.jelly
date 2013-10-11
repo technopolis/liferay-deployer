@@ -1,0 +1,47 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This Jelly script is used to produce the global configuration option.
+
+    Jenkins uses a set of tag libraries to provide uniformity in forms.
+    To determine where this tag is defined, first check the namespace URI,
+    and then look under $JENKINS/views/. For example, <f:section> is defined
+    in $JENKINS/views/lib/form/section.jelly.
+
+    It's also often useful to just check other similar scripts to see what
+    tags they use. Views are always organized according to its owner class,
+    so it should be straightforward to find them.
+  -->
+  <f:section title="Liferay Builder">
+	<f:entry title="Defined Liferay Servers">
+		<f:repeatable var="liferayServer" items="${descriptor.liferayServers}" add="Add a Liferay Server">
+			<table width="100%">
+				<f:entry title="Liferay Server Name" field="liferayServerName">
+						<f:textbox value="${liferayServer.liferayServerName}"/>
+				</f:entry>
+				<f:entry title="Liferay Server Host" field="liferayServerHost">
+						<f:textbox value="${liferayServer.liferayServerHost}"/>
+				</f:entry>
+				<f:entry title="Liferay Server Port" field="liferayServerPort">
+						<f:textbox value="${liferayServer.liferayServerPort}"/>
+				</f:entry>
+				<f:entry title="Username (Email)" field="liferayUserName">
+						<f:textbox value="${liferayServer.liferayUserName}"/>
+				</f:entry>
+				<f:entry title="Password" field="liferayUserPassword" help="Type here the liferay user's password">
+						<f:password value="${liferayServer.liferayUserPassword}"/>
+				</f:entry>
+				<f:entry title="">
+					<div align="right">
+						<f:validateButton title="Test connection" progress="Checking connectivity..." method="testLiferayConnection" with="liferayServerHost,liferayServerPort,liferayUserName,liferayUserPassword"/>
+					</div>
+				</f:entry>
+				<f:entry title="">
+					<div align="right">
+						<f:repeatableDeleteButton value="Delete"/>
+					</div>
+				</f:entry>
+			</table>
+		</f:repeatable>
+	</f:entry>
+  </f:section>
+</j:jelly>
