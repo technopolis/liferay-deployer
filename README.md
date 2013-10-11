@@ -10,4 +10,4 @@ You can find it in https://www.liferay.com/marketplace. It is free.
 
 Install plugin
 ==============
-Download form target/liferay-deployer.hpi, place it in the plugins directory of your jenkins installation, or upload it manually.
+Download form https://github.com/technopolis/liferay-deployer/blob/master/target/liferay-deployer.hpi?raw=true, place it in the plugins directory of your jenkins installation, or upload it manually.
