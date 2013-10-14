@@ -11,3 +11,8 @@ You can find it in [Liferay Marketplace](https://www.liferay.com/marketplace). I
 Install plugin
 ==============
 Download from [here](https://github.com/technopolis/liferay-deployer/blob/master/target/liferay-deployer.hpi?raw=true), place it in the plugins directory of your jenkins installation, or upload it manually.
+
+Using the plugin
+================
+First, you should go to the jenkins configuration and setup one or more liferay portal servers (which have the remote IDE connector app installed).
+![jenkins configuration](https://raw.github.com/technopolis/liferay-deployer/master/doc/jenkins-configuration.png)
